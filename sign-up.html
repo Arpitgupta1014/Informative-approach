@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title> Login/signUp </title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+<script src="feedback.js"></script>
+    </head>
+<body>
+<h1> Sign up for free </h1>
+<div id="formContainer">
+    <div id="header"></div>
+<input type="email" placeholder="Email" id="email"/>
+<input type="password" placeholder="Password" id="password"/>
+
+<button onclick="signUp()" id="signUp"> Sign Up </button>
+<button onclick="signIn()" id="signIn"> Sign In </button>
+<button onclick="signOut()" id="signOut"> Sign Out </button>
+<br>
+<p>&nbsp;&nbsp;If you have forgot your password then send us email:<button onclick="document.location="mailto:informativeapproach@gmail.com & subject= Regarding password reset & message = i have forgotten my password please send me the reset link. >Send email</button>.We will send the reset link soon.</p>
+
+
+</div>
+
+</body>
+<style>
+
+body{
+    background-color: none;
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg);
+
+}
+
+h1{
+    background-color: orangered;
+    margin: -10px auto;
+    text-align: center;
+    color:white;
+}
+
+#formContainer{
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    width: 25%;
+    height: 45%;
+    margin: 10 auto;
+}
+
+#header{
+    width: 100%;
+    height: 10px;
+    background: black;
+}
+
+#email{
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 50px auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+#password{
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+#signUp{
+    background-color: #ff4d4d;
+    margin-top: 20px;
+    margin-left: 54px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border:none;
+}
+#signIn{
+    background-color: #32ff7e;
+    border:none;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+#signOut{
+    background-color: #fffa65;
+    border:none;
+    text-align: center;
+    color:black;
+    padding: 10px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 112px;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+
+</html>

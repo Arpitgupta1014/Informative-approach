@@ -1,0 +1,376 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>
+ 		Informative || approach
+ 	</title>
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<style type="">
+ 		@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+  background-image:url(https://images.unsplash.com/photo-1555967522-37949fc21dcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80);
+  background-size: cover;
+}
+ 
+
+.showcase.active
+{
+  right: 300px;
+}
+
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  /*animation: mytext 3s infinite;*/
+
+}
+.text h2:hover
+{
+  letter-spacing: 10px;
+  color:  yellow ;
+}
+
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+   animation: mycall 3s infinite;
+}
+
+.text h3:hover
+{
+  
+  color:  red;
+  }
+.text p
+{
+  font-size: 1.7em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  animation: mytext 10s infinite;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background:blue ;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  animation: mymove 1s infinite;
+  transform: rotate3d(360);
+}
+.text a:hover
+{
+  letter-spacing: 8px;
+}
+@keyframes mymove {
+ from {background-color: red; }
+  to {backgrount-color:blue;}
+}
+@keyframes mytext {
+  from {color: red; letter-spacing: 0px;}
+  to {color: yellow;letter-spacing: 5px;}
+}
+@keyframes mycall {
+  from {color: pink;}
+  to {color: red;}
+}
+
+
+ 
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+/* CSS for background animation */
+
+.stars-01{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
+              550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
+              1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
+              950px 50px #00BCD4, 1100px 500px #03A9F4, 850px 400px #FF9800, 850px 300px #F44336,
+              1200px 100px #FF9800, 900px 300px #CDDC39, 1150px 400px #F44336, 1650px 900px #00BCD4,
+              650px 600px #FF5722, 350px 600px #009688, 600px 650px #E91E63, 150px 750px #00BCD4,
+              1750px 450px #FF5722, 250px 800px #00BCD4, 1800px 1150px #FF9800, 450px 1450px #FF5722,
+              1150px 800px #00BCD4, 100px 700px #3F51B5, 350px 650px #FFEB3B, 250px 600px #FF5722,
+              1850px 700px #CDDC39, 1650px 600px #FFEB3B, 450px 1050px #673AB7, 1550px 500px #F44336,
+              150px 1400px #8BC34A, 800px 800px #9C27B0, 1250px 1950px #9C27B0, 100px 1700px #8BC34A,
+              1150px 1350px #E91E63, 1700px 50px #FFF, 1750px 500px #F44336, 300px 1100px #CDDC39,
+              350px 1650px #009688, 1700px 1200px #F44336, 450px 800px #FF5722, 2000px 500px #8BC34A,
+              350px 1600px #F44336, 1350px 1350px #673AB7, 1100px 1750px #3F51B5, 150px 950px #FFEB3B,
+              1600px 1700px #2196F3, 400px 1000px #FF9800, 650px 1050px #4CAF50, 2000px 1650px #00BCD4,
+              1100px 700px #9C27B0, 1350px 600px #F44336, 600px 1900px #CDDC39, 1500px 600px #9E9E9E,
+              20px 1350px #8BC34A, 850px 1800px #E91E63, 450px 1150px #2196F3, 50px 700px #FF5722,
+              100px 1400px #F44336, 1000px 1700px #9C27B0, 250px 600px #FF5722, 1200px 850px #CDDC39,
+              1750px 20px #673AB7, 100px 1550px #FFEB3B, 1200px 1650px #3F51B5, 1500px 700px #2196F3,
+              1800px 600px #03A9F4, 650px 800px #00BCD4, 700px 600px #00BCD4, 1100px 1350px #F44336,
+              900px 550px #FF5722, 1600px 800px #2196F3, 1000px 1100px #F44336, 1650px 1350px #FF5722,
+              750px 1050px #FFC107, 1750px 800px #CDDC39, 600px 1650px #F44336, 150px 1550px #673AB7,
+              250px 1800px #FFF, 1100px 1700px #FFC107, 800px 1500px #3F51B5, 1100px 1200px #FF5722,
+              1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+              1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 300px 700px #4CAF50, 100px 1250px #9C27B0,
+              700px 1750px #00BCD4, 1950px 250px #FFF, 1550px 700px #F44336;
+  animation: starsUp 10s linear infinite;
+}
+
+.stars-02{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
+              550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
+              1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
+              950px 50px #00BCD4, 1100px 500px #03A9F4, 850px 400px #FF9800, 850px 300px #F44336,
+              1200px 100px #FF9800, 900px 300px #CDDC39, 1150px 400px #F44336, 1650px 900px #00BCD4,
+              650px 600px #FF5722, 350px 600px #009688, 600px 650px #E91E63, 150px 750px #00BCD4,
+              1750px 450px #FF5722, 250px 800px #00BCD4, 1800px 1150px #FF9800, 450px 1450px #FF5722,
+              1150px 800px #00BCD4, 100px 700px #3F51B5, 350px 650px #FFEB3B, 250px 600px #FF5722,
+              1850px 700px #CDDC39, 1650px 600px #FFEB3B, 450px 1050px #673AB7, 1550px 500px #F44336,
+              150px 1400px #8BC34A, 800px 800px #9C27B0, 1250px 1950px #9C27B0, 100px 1700px #8BC34A,
+              1150px 1350px #E91E63, 1700px 50px #FFF, 1750px 500px #F44336, 300px 1100px #CDDC39,
+              350px 1650px #009688, 1700px 1200px #F44336, 450px 800px #FF5722, 2000px 500px #8BC34A,
+              350px 1600px #F44336, 1350px 1350px #673AB7, 1100px 1750px #3F51B5, 150px 950px #FFEB3B,
+              1600px 1700px #2196F3, 400px 1000px #FF9800, 650px 1050px #4CAF50, 2000px 1650px #00BCD4,
+              1100px 700px #9C27B0, 1350px 600px #F44336, 600px 1900px #CDDC39, 1500px 600px #9E9E9E,
+              20px 1350px #8BC34A, 850px 1800px #E91E63, 450px 1150px #2196F3, 50px 700px #FF5722,
+              100px 1400px #F44336, 1000px 1700px #9C27B0, 250px 600px #FF5722, 1200px 850px #CDDC39,
+              1750px 20px #673AB7, 100px 1550px #FFEB3B, 1200px 1650px #3F51B5, 1500px 700px #2196F3,
+              1800px 600px #03A9F4, 650px 800px #00BCD4, 700px 600px #00BCD4, 1100px 1350px #F44336,
+              900px 550px #FF5722, 1600px 800px #2196F3, 1000px 1100px #F44336, 1650px 1350px #FF5722,
+              750px 1050px #FFC107, 1750px 800px #CDDC39, 600px 1650px #F44336, 150px 1550px #673AB7,
+              250px 1800px #FFF, 1100px 1700px #FFC107, 800px 1500px #3F51B5, 1100px 1200px #FF5722,
+              1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+              1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 300px 700px #4CAF50, 100px 1250px #9C27B0,
+              700px 1750px #00BCD4, 1950px 250px #FFF, 1550px 700px #F44336;
+  animation: starsUp 30s linear infinite;
+}
+
+.stars-03{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
+              550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
+              1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
+              950px 50px #00BCD4, 1100px 500px #03A9F4, 850px 400px #FF9800, 850px 300px #F44336,
+              1200px 100px #FF9800, 900px 300px #CDDC39, 1150px 400px #F44336, 1650px 900px #00BCD4,
+              650px 600px #FF5722, 350px 600px #009688, 600px 650px #E91E63, 150px 750px #00BCD4,
+              1750px 450px #FF5722, 250px 800px #00BCD4, 1800px 1150px #FF9800, 450px 1450px #FF5722,
+              1150px 800px #00BCD4, 100px 700px #3F51B5, 350px 650px #FFEB3B, 250px 600px #FF5722,
+              1850px 700px #CDDC39, 1650px 600px #FFEB3B, 450px 1050px #673AB7, 1550px 500px #F44336,
+              150px 1400px #8BC34A, 800px 800px #9C27B0, 1250px 1950px #9C27B0, 100px 1700px #8BC34A,
+              1150px 1350px #E91E63, 1700px 50px #FFF, 1750px 500px #F44336, 300px 1100px #CDDC39,
+              350px 1650px #009688, 1700px 1200px #F44336, 450px 800px #FF5722, 2000px 500px #8BC34A,
+              350px 1600px #F44336, 1350px 1350px #673AB7, 1100px 1750px #3F51B5, 150px 950px #FFEB3B,
+              1600px 1700px #2196F3, 400px 1000px #FF9800, 650px 1050px #4CAF50, 2000px 1650px #00BCD4,
+              1100px 700px #9C27B0, 1350px 600px #F44336, 600px 1900px #CDDC39, 1500px 600px #9E9E9E,
+              20px 1350px #8BC34A, 850px 1800px #E91E63, 450px 1150px #2196F3, 50px 700px #FF5722,
+              100px 1400px #F44336, 1000px 1700px #9C27B0, 250px 600px #FF5722, 1200px 850px #CDDC39,
+              1750px 20px #673AB7, 100px 1550px #FFEB3B, 1200px 1650px #3F51B5, 1500px 700px #2196F3,
+              1800px 600px #03A9F4, 650px 800px #00BCD4, 700px 600px #00BCD4, 1100px 1350px #F44336,
+              900px 550px #FF5722, 1600px 800px #2196F3, 1000px 1100px #F44336, 1650px 1350px #FF5722,
+              750px 1050px #FFC107, 1750px 800px #CDDC39, 600px 1650px #F44336, 150px 1550px #673AB7,
+              250px 1800px #FFF, 1100px 1700px #FFC107, 800px 1500px #3F51B5, 1100px 1200px #FF5722,
+              1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+              1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 300px 700px #4CAF50, 100px 1250px #9C27B0,
+              700px 1750px #00BCD4, 1950px 250px #FFF, 1550px 700px #F44336;
+  animation: starsUp 50s linear infinite;
+}
+
+.stars-04{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
+              550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
+              1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
+              950px 50px #00BCD4, 1100px 500px #03A9F4, 850px 400px #FF9800, 850px 300px #F44336,
+              1200px 100px #FF9800, 900px 300px #CDDC39, 1150px 400px #F44336, 1650px 900px #00BCD4,
+              650px 600px #FF5722, 350px 600px #009688, 600px 650px #E91E63, 150px 750px #00BCD4,
+              1750px 450px #FF5722, 250px 800px #00BCD4, 1800px 1150px #FF9800, 450px 1450px #FF5722,
+              1150px 800px #00BCD4, 100px 700px #3F51B5, 350px 650px #FFEB3B, 250px 600px #FF5722,
+              1850px 700px #CDDC39, 1650px 600px #FFEB3B, 450px 1050px #673AB7, 1550px 500px #F44336,
+              150px 1400px #8BC34A, 800px 800px #9C27B0, 1250px 1950px #9C27B0, 100px 1700px #8BC34A,
+              1150px 1350px #E91E63, 1700px 50px #FFF, 1750px 500px #F44336, 300px 1100px #CDDC39,
+              350px 1650px #009688, 1700px 1200px #F44336, 450px 800px #FF5722, 2000px 500px #8BC34A,
+              350px 1600px #F44336, 1350px 1350px #673AB7, 1100px 1750px #3F51B5, 150px 950px #FFEB3B,
+              1600px 1700px #2196F3, 400px 1000px #FF9800, 650px 1050px #4CAF50, 2000px 1650px #00BCD4,
+              1100px 700px #9C27B0, 1350px 600px #F44336, 600px 1900px #CDDC39, 1500px 600px #9E9E9E,
+              20px 1350px #8BC34A, 850px 1800px #E91E63, 450px 1150px #2196F3, 50px 700px #FF5722,
+              100px 1400px #F44336, 1000px 1700px #9C27B0, 250px 600px #FF5722, 1200px 850px #CDDC39,
+              1750px 20px #673AB7, 100px 1550px #FFEB3B, 1200px 1650px #3F51B5, 1500px 700px #2196F3,
+              1800px 600px #03A9F4, 650px 800px #00BCD4, 700px 600px #00BCD4, 1100px 1350px #F44336,
+              900px 550px #FF5722, 1600px 800px #2196F3, 1000px 1100px #F44336, 1650px 1350px #FF5722,
+              750px 1050px #FFC107, 1750px 800px #CDDC39, 600px 1650px #F44336, 150px 1550px #673AB7,
+              250px 1800px #FFF, 1100px 1700px #FFC107, 800px 1500px #3F51B5, 1100px 1200px #FF5722,
+              1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+              1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 300px 700px #4CAF50, 100px 1250px #9C27B0,
+              700px 1750px #00BCD4, 1950px 250px #FFF, 1550px 700px #F44336;
+  animation: starsUp 100s linear infinite;
+}
+
+@keyframes starsUp{
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(-2000px);
+  }
+}
+
+
+ 	</style>
+ </head>
+ <body>
+
+
+ 
+
+ 	 <!-- Video Source -->
+ 
+  <section class="showcase">
+    <header>
+      <!-- <h2 class="logo">HELLO WORLD !!</h2> -->
+     
+    </header>
+    
+    <div class="overlay"></div> 
+    <!--stars background start-->
+    
+      <div class="stars-01"></div>
+      <div class="stars-02"></div>
+      <div class="stars-03"></div>
+      <div class="stars-04"></div>
+   
+    <!--stars background end-->
+    <div class="text">
+      <h2>Never Stop To </h2> 
+
+      <h3>Exploring The World</h3>
+      <h1>&nbsp;</h1>
+      <p>"AS A GENERAL RULE ,THE MOST SUCCESSFUL PERSON IN life IS THE MAN WHO HAS THE BEST INFORMATION."</p>
+      <h1>&nbsp;</h1>
+      <h1>&nbsp;</h1>
+      <div><a href="index1.html">LET'S GET INFORMED</a></div>
+
+    </div>
+
+    <!-- <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>  -->
+  </section>
+
+  <!-- <script type="">
+    function myonclickfn() 
+    {
+      document.location.href="untitled1.html";
+     
+      
+    }
+  </script> -->
+  
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+

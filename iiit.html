@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact</title>
+  <style type="">
+    
+    @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+*{ margin:0; padding:0; box-sizing: border-box; }
+/*<===========   OUR TEAM part of website =======>*/
+ 
+.head{ width: 100%; height:100px; background-color:black; font-family: 'Times New Roman', Times, serif  ;}
+
+.sub-head{ width: 100%; height:30px; background-color:red;}
+
+ .section-title h2 {
+  text-transform: uppercase;
+}
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+}
+
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.team-img img{
+  width: 100%;
+  height: 200px;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: tomato;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 150px;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
+}
+.single-team:hover .team-content{
+  background: #000;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: tomato;
+}
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
+}
+
+
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+  z-index: 10;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+
+
+.footer
+{ 
+   width:100%;
+   height:200px;
+   background-color: black; 
+   margin-top:40px;
+
+ }
+
+.last-footer
+{  
+  width: 100%;
+  height: 30px;
+  background-color:red;
+               
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<!--  -------------=======The our team part =====---------------------->
+<section>
+<header>
+    <div class="head">
+      <center><h1>OUR PRIDE OUR IIITs</h1></center>
+    </div>
+    <div class="sub-head">
+    <p style="color: white;"><marquee>Welcome to Informative Approach</marquee></p>
+  </div>
+  </header>
+ 
+  <div class="team-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h2>INDIAN INSTITUTE OF INFORMATION AND TECHNOLOGY</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiit.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.Wj7zEHCH4OzGFk6eHSz0IgHaFj&pid=Api&P=0&w=208&h=157" alt="iiith"  class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>1.IIIT</h3>
+              <p>(HYDERABAD)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiitb.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.ugrWGigHHaecn_U0aUnYNQHaCo&pid=Api&P=0&w=489&h=175" alt="iiitb" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>2.IIIT</h3>
+              <p>(BANGALORE)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="http://iiitg.ac.in/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.UaOgnupEICHpVfG_ZCBHaQHaDt&pid=Api&P=0&w=355&h=178" alt="iiitgwh"  class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>3.IIIT</h3>
+              <p>(GUWHATI)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://iiitdmj.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.wRduU3xJ1k_HqmDNoyjGygHaCU&pid=Api&P=0&w=501&h=158" alt="iiitdm" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>4.IIITDM</h3>
+              <p>(JABALPUR)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+
+      <h1>&nbsp;</h1>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.lns0AHVGehOg910ihl_a5wHaEk&pid=Api&P=0&w=261&h=162" alt="iiitmg" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>5.IIITM</h3>
+              <p>(GWALIOR)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://iiita.ac.in/" target="_blank"> <img src="http://www.careerindia.com/img/2014/03/29-iiitallahabad.jpg" alt="iiitall" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>6.IIIT</h3>
+              <p>(ALLAHABAD)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiitdm.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.oFr6UaFUQIgD5d1mbRIyKQAAAA&pid=Api&P=0&w=194&h=152" alt="iiitkanch"  class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>7.IIIT</h3>
+              <p>(KANCHEEPURAM)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.isquareit.edu.in/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.D56tWi4K1JdeAMdXLIx0hAHaCr&pid=Api&P=0&w=447&h=163" alt="iiitp" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>8.IIIT</h3>
+              <p>(PUNE)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+
+      <h1>&nbsp;</h1>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="http://iiitkota.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.b-E2Ok_wPNa0_EDkRVNaNwHaEr&pid=Api&P=0&w=255&h=162" alt="iiitkota" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>9.IIIT</h3>
+              <p>(KOTA)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div><!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiits.ac.in/" target="_blank"> <img src="https://tse4.mm.bing.net/th?id=OIP.90SJ6dL98M76C1f6GTtINwHaEU&pid=Api&P=0&w=278&h=163" alt="iiitsri"  class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>10.IIIT</h3>
+              <p>(SRI)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="http://iiitvadodara.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.QBISGqo2MRj3oCrFZV-U5QHaEK&pid=Api&P=0&w=298&h=169" alt="iiitvad" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>11.IIIT</h3>
+              <p>(VADODRA)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiitn.ac.in/" target="_blank"><img src="https://tse4.mm.bing.net/th?id=OIP.XvH_hbBKoruAePt7pI9_9gHaFj&pid=Api&P=0&w=228&h=172" alt="iiitngp" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>12.IIIT</h3>
+              <p>(NAGPUR)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+
+        <h1>&nbsp;</h1>
+      </div><!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="http://iiitkalyani.ac.in/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.P1dmjzSBg2YV9JT_-LLNwgHaDe&pid=Api&P=0&w=373&h=176" alt="iiitkly" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>13.IIIT</h3>
+              <p>(KALYANI)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://iiitl.ac.in/" target="_blank"> <img src="https://tse1.mm.bing.net/th?id=OIP.VFGur50uwgNjl2EEn9IJJgHaE9&pid=Api&P=0&w=303&h=203" alt="iiitluck" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>14.IIIT</h3>
+              <p>(LUCKNOW)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.iiitdwd.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.LxyB4cBvZ1T67RgncToQ3AHaDt&pid=Api&P=0&w=347&h=174" alt="iiitdhr" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>15.IIIT</h3>
+              <p>(DHARWAD)</p>
+            </div>
+            <p class="team-text">Welcome to the world of NITs</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://iiitbh.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.-HlwSnVoBNeopS8vn_PRRQHaE7&pid=Api&P=0&w=292&h=196" alt="iiitbhgl" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>16.IIIT</h3>
+              <p>(BHAGALPUR)</p>
+            </div>
+            <p class="team-text">Welcome to the world of IIITs</p>
+          </div>
+        </div>
+      </div>
+
+<h1>&nbsp;</h1>
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="https://www.iiitbhopal.ac.in/#!/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.z7XHwTXfaa0I7kUUv_r8yAHaDo&pid=Api&P=0&w=352&h=173" alt="iiitbh" class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>17.IIIT</h3>
+        <p>(BHOPAL)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="https://www.iiitkottayam.ac.in/#!/home" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.3UkzG-SLGCWGxK4btqd3bwHaCk&pid=Api&P=0&w=494&h=172" alt="iiitkot" class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>18.IIIT</h3>
+        <p>(KOTTYAM)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="http://iiitranchi.ac.in/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.S44FHJAH91jzmIN0-Sg7aAHaEf&pid=Api&P=0&w=305&h=186" alt="iiitranchi" class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>19.IIIT</h3>
+        <p>(RANCHI)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="http://www.iiitu.ac.in/aboutus.html#gsc.tab=0" target="_blank"> <img src="https://tse1.mm.bing.net/th?id=OIP.iKuUw7UFMN4tsQx24cyeywHaC3&pid=Api&P=0&w=386&h=150" alt="iiituna"class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>20.IIIT</h3>
+        <p>(UNA)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+<h1>&nbsp;</h1>
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="http://iiitsurat.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP._4V57LaNe1v_EJCO-xqV-AHaFj&pid=Api&P=0&w=226&h=171" alt="iiitsrt"class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>21.IIIT</h3>
+        <p>(SURAT)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+ <!--== Single Team Item ==-->
+ <div class="col-md-3">
+  <div class="single-team">
+    <div class="team-img">
+        <a href="http://www.iiitmanipur.ac.in/" target="_blank"> <img src="https://tse3.mm.bing.net/th?id=OIP.uOqs1bVql9kX0BIBntqdbwHaDR&pid=Api&P=0&w=428&h=190" alt="iiitman"class="img-responsive"></a>
+    </div>
+    <div class="team-content">
+      <div class="team-info">
+        <h3>22.IIIT</h3>
+        <p>(MANIPUR)</p>
+      </div>
+      <p class="team-text">Welcome to the world of IIITs</p>
+    </div>
+  </div>
+</div>
+
+<!--== Single Team Item ==-->
+<div class="col-md-3">
+    <div class="single-team">
+      <div class="team-img">
+        <a href="https://iiitk.ac.in/Department-of-Sciences/page" target="_blank"> <img src="https://tse2.mm.bing.net/th?id=OIP.JAnpxLMd5ZAgz5L4qUZWrQHaDt&pid=Api&P=0&w=325&h=163" alt="iiitkur" class="img-responsive"></a>
+      </div>
+      <div class="team-content">
+        <div class="team-info">
+          <h3>23.IIIT</h3>
+          <p>(KURNOOL)</p>
+        </div>
+        <p class="team-text">Welcome to the world of IIITs</p>
+      </div>
+    </div>
+  </div>
+
+  <!--== Single Team Item ==-->
+ <div class="col-md-3">
+    <div class="single-team">
+      <div class="team-img">
+        <a href="http://www.iiitt.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.B7dODW0qhhjDBSlFuW0ohgAAAA&pid=Api&P=0&w=264&h=152" alt="iiittr"  class="img-responsive"></a>
+      </div>
+      <div class="team-content">
+        <div class="team-info">
+          <h3>24.IIIT</h3>
+          <p>(TRICHIRUPALLI)</p>
+        </div>
+        <p class="team-text">Welcome to the world of IIITs</p>
+      </div>
+    </div>
+  </div>
+
+  <h1>&nbsp;</h1>
+   <!--== Single Team Item ==-->
+ <div class="col-md-3">
+    <div class="single-team">
+      <div class="team-img">
+        <a href="http://iiitsonepat.ac.in/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP._TXonhLPdERnQm39GjSUqgHaDg&pid=Api&P=0&w=368&h=175" alt="iiitso" class="img-responsive"></a>
+      </div>
+      <div class="team-content">
+        <div class="team-info">
+          <h3>25.IIIT</h3>
+          <p>(SONIPAT)</p>
+        </div>
+        <p class="team-text">Welcome to the world of IIITs</p>
+      </div>
+    </div>
+  </div>
+
+   <!--== Single Team Item ==-->
+ <div class="col-md-3">
+    <div class="single-team">
+      <div class="team-img">
+        <a href="https://www.nita.ac.in/IIITAgartala/" target="_blank"><img src="https://tse3.mm.bing.net/th?id=OIP.zzZSV3dmZ-a--A72Vaaz5wHaEK&pid=Api&P=0&w=287&h=162" alt="iiitagr"  class="img-responsive"></a>
+      </div>
+      <div class="team-content">
+        <div class="team-info">
+          <h3>26.IIIT</h3>
+          <p>(AGARTALA)</p>
+        </div>
+        <p class="team-text">Welcome to the world of IIITs</p>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+</section>
+<!----------------footer  part of this website---------------------  -->
+<footer>
+<div class="footer">
+  
+</div>
+</footer>
+<div class="last-footer">
+  large and the value of icon will be shown here
+</div>
+
+</body>
+</html>

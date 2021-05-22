@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact</title>
+  <style type="">
+    
+    @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+*{ margin:0; padding:0; box-sizing: border-box; }
+/*<===========   OUR TEAM part of website =======>*/
+ 
+.head{ width: 100%; height:100px; background-color:black; font-family: 'Times New Roman', Times, serif  ;}
+
+.sub-head{ width: 100%; height:30px; background-color:red;}
+
+ .section-title h2 {
+  text-transform: uppercase;
+}
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+}
+
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.team-img img{
+  width: 285px;
+  height: 200px;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: tomato;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 150px;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
+}
+.single-team:hover .team-content{
+  background: #000;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: tomato;
+}
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
+}
+
+
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+  z-index: 10;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+
+
+.footer
+{ 
+   width:100%;
+   height:200px;
+   background-color: black; 
+   margin-top:40px;
+
+ }
+
+.last-footer
+{  
+  width: 100%;
+  height: 30px;
+  background-color:red;
+               
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<!--  -------------=======The our team part =====---------------------->
+<section>
+<header>
+    <div class="head">
+      <center><h1>BITS COLLEGES</h1></center>
+    </div>
+    <div class="sub-head">
+    <p style="color: white;"><marquee>Welcome to Informative Approach</marquee></p>
+  </div>
+  </header>
+ 
+  <div class="team-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h2>BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://bits-pilani.ac.in/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.jZfDJbZOUxSicgRVmFti_gHaCe&pid=Api&P=0&w=452&h=151" alt="bitspilani" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>1.BITS</h3>
+              <p>(PILANI)</p>
+            </div>
+            <p class="team-text">Welcome to the world of BITS colleges</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.bits-pilani.ac.in/Hyderabad/" target="_blank"><img src="https://tse4.mm.bing.net/th?id=OIP.rE5JbL1CDZIwsYeTDZDmwQHaE7&pid=Api&P=0&w=249&h=167" alt="bitshyd" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>2.BITS</h3>
+              <p>(HYDERABAD)</p>
+            </div>
+            <p class="team-text">Welcome to the world of BITS colleges</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <a href="https://www.bits-pilani.ac.in/goa/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.x6CFA0rxPOiTlN6W3pwnswHaEq&pid=Api&P=0&w=282&h=178" alt="bitsgoa" class="img-responsive"></a>
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>3.BITS</h3>
+              <p>(GOA)</p>
+            </div>
+            <p class="team-text">Welcome to the world of BITS colleges</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+</div>
+</section>
+<!----------------footer  part of this website---------------------  -->
+<footer>
+<div class="footer">
+
+</div>
+</footer>
+<div class="last-footer">
+large and the value of icon will be shown here
+</div>
+
+</body>
+</html>

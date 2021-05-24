@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style> 
+    body {
+      background-image: url("https://i.pinimg.com/originals/38/2a/e0/382ae06943d8413d3df92db1505c7c51.jpg");
+      background-size: 1600px 850px;
+    }
+    .btn{width: 100%; background-color: orange;}
+    </style>
+    </head>
+    <body>
+        <p>Document Body</p>
+    </body>
+    </html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <style>
+body {
+	background-color: #000;
+}
+html,
+body {
+	height: 100%;
+}
+.imagebg {
+	background-image: url("images/mixing-desk-351478_1920.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.form-container
+{
+	background-color: #fff;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    border-radius: 8px;	
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+</style>
+      <script>
+$(function()
+{
+    function after_form_submitted(data) 
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' ); 
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+            
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' ); 
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Thankyou For Your Feedback');
+        });
+        
+
+                    $.ajax({
+                type: "POST",
+                url: 'http://reusableforms.com/handler/d4/feedback-form-in-html',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json' 
+            });        
+        
+      });	
+});
+</script>
+            <style>
+        #orig_article_block {
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        height:60px;
+        width:100%;
+        background:#222;
+        color:#fff;
+        padding: 10px;
+        }
+        #orig_article_block a
+        {
+          color:#fff;
+          text-decoration: underline;
+        }
+
+        /* IE 6 */
+        * html #orig_article_block {
+        position:absolute;
+        top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+        }
+      </style>
+        </head>
+  <body >
+      <div class="container">
+        <div class="imagebg"></div>
+<div class="row " style="margin-top: 50px">
+    <div class="col-md-6 col-md-offset-3 form-container">
+        
+        
+        
+        <style>
+            .example1 {
+             height: 50px;	
+             overflow: hidden;
+             position: relative;
+            }
+            .example1 h3 {
+             position: absolute;
+             color: indigo;
+             width: 100%;
+             height: 100%;
+             margin: 0;
+             line-height: 50px;
+             text-align: center;
+             /* Starting position */
+             -moz-transform:translateX(100%);
+             -webkit-transform:translateX(100%);	
+             transform:translateX(100%);
+             /* Apply animation to this element */	
+             -moz-animation: example1 10s linear infinite;
+             -webkit-animation: example1 10s linear infinite;
+             animation: example1 10s linear infinite;
+            }
+            /* Move it (define the animation) */
+            @-moz-keyframes example1 {
+             0%   { -moz-transform: translateX(100%); }
+             40%   { -moz-transform: translateX(0%); }
+             60%   { -moz-transform: translateX(0%); }
+             100% { -moz-transform: translateX(-100%); }
+            }
+            @-webkit-keyframes example1 {
+             0%   { -webkit-transform: translateX(100%); }
+             40%   { -webkit-transform: translateX(0%); }
+             60%   { -webkit-transform: translateX(0%); }
+             100% { -webkit-transform: translateX(-100%); }
+            }
+            @keyframes example1 {
+             0%   { 
+             -moz-transform: translateX(100%); /* Firefox bug fix */
+             -webkit-transform: translateX(100%); /* Firefox bug fix */
+             transform: translateX(100%); 		
+             }
+             40%   { 
+             -moz-transform: translateX(0%); /* Firefox bug fix */
+             -webkit-transform: translateX(0%); /* Firefox bug fix */
+             transform: translateX(0%); 		
+             }
+             60%   { 
+             -moz-transform: translateX(0%); /* Firefox bug fix */
+             -webkit-transform: translateX(0%); /* Firefox bug fix */
+             transform: translateX(0%); 		
+             }
+             100% { 
+             -moz-transform: translateX(-100%); /* Firefox bug fix */
+             -webkit-transform: translateX(-100%); /* Firefox bug fix */
+             transform: translateX(-100%); 
+             }
+            }
+            </style>
+            
+            <div class="example1">
+            <h3>Welcome to INFORMATIVE APPROACH</h3>
+            </div>
+        
+        
+        
+        
+        <h3>Feedback section</h3>
+          
+        <p>
+            Please provide your feedback below:
+        </p>
+
+        <form action="javascript:sendmail()" method="post">
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>How do you rate your overall experience?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio"   id="experience" name="radio_experience" value="good" >
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio"  id="experience" name="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio"  id="experience" name="radio_experience" value="bad" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Was this website useful?:</label>
+                    <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                required=""></textarea>
+<br>
+                    <label for="comments">
+                        We would highly appreciate your suggestions if any?:</label>
+                    <textarea name="Message" class="form-control" id="Message2" placeholder="Message"
+                required=""></textarea>
+ 
+                   
+                </div>
+            </div>
+
+            <h3>Give your contact details for more information:</h3>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                  required="">
+                </div>
+            </div>
+
+
+          
+<p>If you have any query please send it to our mail:&nbsp;&nbsp;<button onclick="document.location='mailto:informativeapproach@gmail.com'">Send email</button></p>
+           
+                        <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-contact">Submit</button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message" 
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>          
+    </div>
+</div>
+      </div> 
+
+
+      <!-- /contact1 -->
+  
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+            var name = $('#Name').val();
+            var email = $('#Sender').val();
+            var radio = $('#experience').val();
+            // var subject = $('#Subject').val();
+           var message = $('#Message').val();
+            var message = $('#Message2').val();
+
+            // var body = $('#body').val();
+
+             var Body='Name: '+name+'<br>Email: '+email+'<br>experience: '+radio+'<br>Message: '+message+'<br>Message2: '+message;
+            //console.log(name, phone, email, message);
+
+            Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+                To: 'informativeapproach@gmail.com',
+                From: "arpitgupta1014@gmail.com",
+                Subject: "New message on contact from "+name,
+                Body: Body
+            }).then(
+                message =>{
+                    //console.log (message);
+                    if(message=='OK'){
+                    alert(' Your mail has been send. Thankyou for your feedback .');
+                    }
+                    else{
+                        console.error (message);
+                        alert('There is error at sending message. ')
+                        
+                    }
+
+                }
+            );
+
+
+
+        }
+
+
+    </script>
+ </script>
+
+    </body>
+</html>
